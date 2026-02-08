@@ -1130,3 +1130,65 @@ https://templatemo.com/tm-596-electric-xtra
                 transform: scale(0.6);
             }
         }
+
+/* Custom CV Styles */
+.about-text table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    background: rgba(0, 0, 0, 0.3);
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.about-text table th {
+    background: linear-gradient(135deg, rgba(255, 94, 0, 0.2), rgba(0, 178, 255, 0.2));
+    color: #ffffff;
+    text-align: left;
+    padding: 15px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 0.85rem;
+}
+
+.about-text table td {
+    padding: 12px 15px;
+    color: rgba(255, 255, 255, 0.85);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.about-text table tr:hover td {
+    background: rgba(255, 94, 0, 0.1);
+}
+
+.about-text table tr:last-child td {
+    border-bottom: none;
+}
+
+.about-text .feature-list {
+    list-style: none;
+    padding: 0;
+    margin: 15px 0;
+}
+
+.about-text .feature-list li {
+    padding: 8px 0;
+    padding-left: 25px;
+    position: relative;
+    color: rgba(255, 255, 255, 0.85);
+}
+
+.about-text .feature-list li::before {
+    content: '▹';
+    position: absolute;
+    left: 0;
+    color: #FF5E00;
+}
+
+.about-text h3 {
+    color: #00B2FF;
+    margin-top: 25px;
+    margin-bottom: 10px;
+    font-weight: 600;
+}
