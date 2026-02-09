@@ -37,6 +37,12 @@ Software Engineer with 5+ years of experience designing and building **productio
 - Standalone executable distribution (PyInstaller)
 - Cross-platform packaging and deployment
 
+### Mobile & Cross-Platform
+- Android development (Java/Kotlin)
+- Bluetooth Classic/BLE communication
+- Mobile-to-embedded system integration
+- Real-time data visualization on mobile
+
 ### Data & Infrastructure
 - PostgreSQL (partitioning, triggers, materialized views)
 - DynamoDB for time-series telemetry
@@ -228,25 +234,44 @@ Software Engineer with 5+ years of experience designing and building **productio
 ---
 
 ### PID Control System with Database Integration
-**Industrial Temperature Control** | Embedded + Full-Stack
+**Industrial Temperature Control** | Full-Stack API + Embedded
 
-**Context:** Built complete PID temperature control system using ESP32-S3 microcontroller with PostgreSQL database integration for laboratory communications practice.
+**Context:** Built complete PID temperature control system using ESP32-S3 microcontroller with a full-stack web architecture including REST API, PostgreSQL database, and real-time WebSocket streaming.
 
-**Role:** Full-Stack Developer
+**Role:** Full-Stack Developer / System Architect
 
-**Architecture:** Embedded firmware (C++) + Node.js backend + PostgreSQL database with WebSocket real-time streaming.
+**Architecture:** Three-tier full-stack system with embedded firmware, backend API server, and web dashboard.
+
+```
+┌──────────────────────┐
+│   Web Dashboard      │  ← Real-time charts, PID tuning interface
+│   (JavaScript/HTML)  │
+└──────────┬───────────┘
+           │ WebSocket + REST
+┌──────────▼───────────┐
+│   Node.js Server     │  ← Express.js REST API, WebSocket server
+│   + PostgreSQL       │  ← Sensor data persistence, time-series queries
+└──────────┬───────────┘
+           │ HTTP/WiFi
+┌──────────▼───────────┐
+│   ESP32-S3 Firmware  │  ← PID algorithm, temperature sensor, actuators
+└──────────────────────┘
+```
 
 **Key Technical Decisions:**
-- Implemented configurable PID parameters (Kp, Ki, Kd) with real-time tuning via REST API
-- Designed 5-minute rolling window for historical data access (laboratory requirement)
-- Used WebSocket for real-time sensor data streaming at 1 Hz
+- **REST API Design:** Endpoints for PID parameter configuration (GET/POST /api/pid), sensor readings (GET /api/readings), and system status
+- **PostgreSQL Schema:** Time-series optimized table with timestamp indexing for 5-minute rolling window queries
+- **Node.js Server:** Express.js backend with connection pooling, error handling middleware, and structured logging
+- **WebSocket Streaming:** Real-time sensor data at 1 Hz with reconnection logic and heartbeat
+- **Configurable PID:** Real-time tuning of Kp, Ki, Kd parameters via API without firmware reflash
 
 **Impact:**
 - Achieved ±1°C steady-state accuracy with <30 second response time
-- Delivered 100ms communication latency over WiFi
+- Delivered 100ms end-to-end latency (ESP32 → Server → Dashboard)
+- PostgreSQL handles 86,400+ daily sensor readings with efficient retention policies
 - Created exportable CSV functionality for data analysis
 
-**Technologies:** C++ (Arduino), Node.js, PostgreSQL, WebSocket, REST API, ESP32-S3
+**Technologies:** Node.js, Express.js, PostgreSQL, WebSocket, REST API, JavaScript, C++ (Arduino), ESP32-S3
 
 ---
 
@@ -270,6 +295,76 @@ Software Engineer with 5+ years of experience designing and building **productio
 - Documented complete hardware specifications and safety considerations
 
 **Technologies:** C++, ESP32, DHT11, HC-SR04, MAX6675 Thermocouple, PWM, DAC
+
+---
+
+### Mobile IoT Control Application
+**Android + Bluetooth + Embedded** | Cross-Platform Communication
+
+**Context:** Developed native Android application for real-time control and monitoring of ESP32 microcontroller via Bluetooth, demonstrating mobile-to-embedded communication patterns.
+
+**Role:** Mobile Developer / Embedded Engineer
+
+**Architecture:** Android app (Java/Kotlin) communicating with ESP32 via Bluetooth Classic/BLE, with UDP networking for extended range scenarios.
+
+**Key Technical Decisions:**
+- Implemented Bluetooth pairing and connection management with automatic reconnection
+- Designed bidirectional communication protocol for commands and sensor data
+- Created responsive Android UI for real-time data visualization
+- Added UDP fallback for scenarios requiring network-based communication
+
+**Impact:**
+- Demonstrated cross-platform communication (Mobile → Bluetooth → Embedded)
+- Real-time control with <50ms latency over Bluetooth
+- Scalable pattern applicable to IoT consumer products
+
+**Technologies:** Android (Java/Kotlin), Bluetooth Classic/BLE, ESP32, UDP, C++
+
+---
+
+### Contract Document Automation
+**Document Generation Platform** | Python Automation
+
+**Context:** Built automated contract generation system for streamlining legal document creation with template-based output and data validation.
+
+**Role:** Developer
+
+**Architecture:** Python-based document automation with template engine and data validation layer.
+
+**Key Technical Decisions:**
+- Implemented template-based document generation with variable substitution
+- Designed data validation layer to ensure contract completeness
+- Created modular architecture for adding new contract types
+
+**Impact:**
+- Reduced contract preparation time from hours to minutes
+- Established reusable pattern for document automation (applied to insurance letters, contracts)
+- Demonstrated Python automation expertise for business process optimization
+
+**Technologies:** Python, Document templates, Data validation, Automation
+
+---
+
+### Industrial Conveyor Belt Control System
+**Embedded Industrial Automation** | C++ / Microcontrollers
+
+**Context:** Developed control system for industrial conveyor belt with sensor integration, motor control, and safety interlocks.
+
+**Role:** Embedded Systems Developer
+
+**Architecture:** State machine-based control logic with interrupt-driven sensor processing and PWM motor control.
+
+**Key Technical Decisions:**
+- Implemented state machine for conveyor states (IDLE, RUNNING, PAUSED, EMERGENCY_STOP)
+- Designed interrupt handlers for proximity sensors and safety switches
+- Created PWM-based motor speed control with soft start/stop ramps
+
+**Impact:**
+- Demonstrated industrial automation capabilities relevant to manufacturing B2B
+- Applied embedded best practices: non-blocking code, watchdog timers, fail-safe design
+- Documented hardware interfaces and safety considerations
+
+**Technologies:** C++, Microcontrollers, PWM, Sensors, Industrial Automation
 
 ---
 
@@ -335,16 +430,18 @@ Expected Graduation: 2026
 | GitHub Contributions (Last Year) | 782+ |
 | Public Repositories | 111 |
 | Primary Languages | Python, TypeScript, JavaScript, C++ |
-| Production Systems Delivered | 8+ |
+| Production Systems Delivered | 10+ |
 | Client Projects Completed | 20+ |
 | Test Coverage (Key Projects) | 90%+ |
 | Desktop Apps Deployed | 2 (standalone .exe) |
+| Mobile Apps Developed | 1 (Android + Bluetooth) |
+| Full-Stack APIs Built | 5+ |
 
 ---
 
 ## Keywords
 
-Python, FastAPI, Pandas, PostgreSQL, AWS IoT Core, CloudFormation, Docker, REST API, MQTT, TypeScript, React, Node.js, Pydantic, SQLAlchemy, openpyxl, DynamoDB, Kinesis, X.509, TLS, VPN, LoRaWAN, ESP32, C++, CI/CD, GitHub Actions, LocalStack, Terraform, Infrastructure as Code, B2B Platforms, Insurance Tech, IoT, Edge Computing, Data Pipelines, ETL, System Architecture, Technical Leadership, PyQt6, ReportLab, PDF Generation, Desktop Applications, PyInstaller, DIAN API, Colombian Tax Integration, Technical Consulting, WhatsApp API, Client Delivery
+Python, FastAPI, Pandas, PostgreSQL, AWS IoT Core, CloudFormation, Docker, REST API, MQTT, TypeScript, React, Node.js, Pydantic, SQLAlchemy, openpyxl, DynamoDB, Kinesis, X.509, TLS, VPN, LoRaWAN, ESP32, C++, CI/CD, GitHub Actions, LocalStack, Terraform, Infrastructure as Code, B2B Platforms, Insurance Tech, IoT, Edge Computing, Data Pipelines, ETL, System Architecture, Technical Leadership, PyQt6, ReportLab, PDF Generation, Desktop Applications, PyInstaller, DIAN API, Colombian Tax Integration, Technical Consulting, WhatsApp API, Client Delivery, Android Development, Bluetooth, Mobile Apps, Express.js, WebSocket, Industrial Automation, Document Automation, Conveyor Systems, State Machine Design
 
 ---
 
