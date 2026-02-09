@@ -1,0 +1,120 @@
+\documentclass[11pt,a4paper]{article}
+
+% Packages
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+\usepackage[margin=0.7in]{geometry}
+\usepackage{hyperref}
+\usepackage{enumitem}
+\usepackage{titlesec}
+\usepackage{parskip}
+
+% Hyperref setup
+\hypersetup{
+    colorlinks=true,
+    linkcolor=black,
+    urlcolor=blue,
+    pdfauthor={Daniel Garcia Araque},
+    pdftitle={Daniel Garcia Araque - Senior Software Engineer}
+}
+
+% Section formatting
+\titleformat{\section}{\large\bfseries\uppercase}{}{0em}{}[\titlerule]
+\titlespacing{\section}{0pt}{12pt}{6pt}
+
+% Remove page numbers
+\pagestyle{empty}
+
+% Custom commands
+\newcommand{\resumeSubheading}[4]{
+    \textbf{#1} \hfill #2 \\
+    \textit{#3} \hfill \textit{#4}
+}
+
+\begin{document}
+
+% Header
+\begin{center}
+    {\LARGE \textbf{Daniel Garcia Araque}} \\[4pt]
+    {\large Senior Software Engineer | Software Architect} \\[4pt]
+    Bogota, Colombia \\[4pt]
+    \href{mailto:est.daniel.garciaa@unimilitar.edu.co}{est.daniel.garciaa@unimilitar.edu.co} | 
+    \href{https://github.com/DanielAraqueStudios}{github.com/DanielAraqueStudios}
+\end{center}
+
+% Summary
+\section{Summary}
+Software Engineer with 6+ years of professional experience designing and building production-grade B2B platforms with emphasis on scalable architecture, data integrity, and system reliability. Currently Full Stack Developer at Unión Agencia de Seguros, delivering 10+ production insurance tech systems. Previously 5 years at Quantum Software and Marketing building 20+ client projects across industries. Proven expertise in multi-site IoT infrastructure and cloud-native solutions using AWS. Strong advocate for documentation-driven development, modular design patterns, and long-term maintainability.
+
+% Skills
+\section{Skills}
+\textbf{Architecture:} Domain-Driven Design, Multi-tier Systems, API-first Design, Technical Documentation, ADRs \\
+\textbf{Backend:} Python, FastAPI, Pydantic, SQLAlchemy, Node.js, Express.js, REST APIs, WebSocket, MQTT \\
+\textbf{Frontend:} React, TypeScript, JavaScript, HTML/CSS \\
+\textbf{Desktop/Mobile:} PyQt6, ReportLab, PyInstaller, Android (Java/Kotlin), Bluetooth/BLE \\
+\textbf{Data:} PostgreSQL, DynamoDB, Pandas, ETL Pipelines, Excel Automation (openpyxl) \\
+\textbf{DevOps:} Docker, AWS (IoT Core, Kinesis, CloudFormation), GitHub Actions, LocalStack \\
+\textbf{Security:} X.509 Certificates, mTLS, TLS 1.3, VPN IPsec \\
+\textbf{Testing:} pytest, mypy, 90\%+ Test Coverage
+
+% Experience
+\section{Experience}
+
+\resumeSubheading{Full Stack Developer}{January 2025 -- Present}{Unión Agencia de Seguros}{Bogota, Colombia}
+\begin{itemize}[nosep, leftmargin=*]
+    \item Developed Insurance Document Automation System (PyQt6 desktop app) with PDF generation, DIAN NIT validation, deployed as standalone .exe reducing document generation from hours to seconds
+    \item Built Conciliator Softseguros Celer: reconciliation platform processing 50,000+ records with 100\% data integrity, 3-tier matching logic, and 90\%+ test coverage
+    \item Created Insurance Production Dashboard for Excel (.xlsb) report processing with multi-criteria filtering
+    \item Designed Data Migration Platform with DIAN API integration for batch NIT validation of thousands of records
+\end{itemize}
+
+\vspace{6pt}
+\resumeSubheading{Web Developer}{February 2020 -- January 2025}{Quantum Software and Marketing}{Bogota, Colombia}
+\begin{itemize}[nosep, leftmargin=*]
+    \item Delivered 20+ production websites and applications across healthcare, retail, hospitality, and manufacturing industries
+    \item Implemented React frontends with Node.js backends; managed full project lifecycle from requirements to deployment
+    \item Built WhatsApp quotation bot for Acrildental (healthcare), business platforms for manufacturing and hospitality clients
+    \item Established long-term client relationships with repeat engagements (Mantra Coworking: 3 versions, CH Beauty: 2 versions)
+\end{itemize}
+
+\vspace{6pt}
+\resumeSubheading{Bilingual Customer Service Specialist}{October 2019 -- December 2019}{Concentrix Customer Services Colombia SAS}{Bogota, Colombia}
+\begin{itemize}[nosep, leftmargin=*]
+    \item Provided bilingual (Spanish/English) customer service for Macy's Credit, developing stakeholder communication skills
+\end{itemize}
+
+% Projects
+\section{Projects}
+
+\textbf{IoT Agriculture Platform} -- Multi-site smart farming infrastructure for 8 distributed sites \\
+Designed three-tier architecture (Edge + Cloud + Frontend) integrating 8,176 sensors, 2,024 RFID readers. Implemented IP addressing for 65,536 addresses, 48 VLANs, MQTT over TLS. Achieved 98.5\% uptime with <100ms latency. \\
+\textit{Tech: Python, FastAPI, React, PostgreSQL, AWS IoT Core, MQTT, LoRaWAN, Docker}
+
+\vspace{4pt}
+\textbf{AWS IoT Healthcare Monitoring} -- Vital signs monitoring with real-time anomaly detection \\
+Built event-driven pipeline (MQTT → IoT Core → Kinesis → Lambda → DynamoDB). Processed 5,247 messages with 0\% packet loss, 115ms avg latency, detected 541 anomalies (10.3\%) with real-time alerting. \\
+\textit{Tech: Python, AWS IoT Core, Kinesis, DynamoDB, X.509 Certificates, LocalStack}
+
+\vspace{4pt}
+\textbf{PID Control System with Full-Stack Integration} -- Industrial temperature control with REST API \\
+Built three-tier system: ESP32 firmware, Node.js/Express API with PostgreSQL, and real-time WebSocket dashboard. Achieved ±1°C accuracy, <30s response time, handles 86,400+ daily sensor readings. \\
+\textit{Tech: Node.js, Express.js, PostgreSQL, WebSocket, C++ (Arduino), ESP32-S3}
+
+% Education
+\section{Education}
+
+\textbf{Mechatronics Engineering} \hfill Expected Graduation: 2027 \\
+Universidad Militar Nueva Granada, Bogota, Colombia \hfill Currently Enrolled
+
+% Certifications
+\section{Certifications}
+
+\textbf{Misión TIC 2022 -- Web Applications Development} \hfill December 2021 \\
+MinTIC (Ministry of ICT) \& Universidad Pontificia Bolivariana | 800 hours | Credential ID: 1000718485
+
+% Languages
+\section{Languages}
+Spanish (Native) | English (C1 Advanced -- Professional Working Proficiency)
+
+\end{document}

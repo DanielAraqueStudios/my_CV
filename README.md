@@ -10,7 +10,7 @@ Bogota, Colombia
 
 ## Professional Summary
 
-Software Engineer with 5+ years of experience designing and building **production-grade B2B platforms** with emphasis on **scalable architecture**, **data integrity**, and **system reliability**. Proven track record delivering **8+ production insurance tech systems**, multi-site IoT infrastructure, and cloud-native solutions using AWS. Demonstrated success as a **technical consultant** with 20+ client projects across industries (insurance, healthcare, retail, hospitality). Strong advocate for **documentation-driven development**, modular design patterns, and long-term maintainability. Demonstrated ability to lead technical decision-making, define standards, and collaborate with business stakeholders to translate requirements into robust, sustainable systems. English: Conversational (B2), actively improving.
+Software Engineer with **6+ years of professional experience** designing and building **production-grade B2B platforms** with emphasis on **scalable architecture**, **data integrity**, and **system reliability**. Currently Full Stack Developer at **Unión Agencia de Seguros**, delivering **10+ production insurance tech systems**. Previously 5 years at **Quantum Software and Marketing** building 20+ client projects across industries. Proven expertise in multi-site IoT infrastructure and cloud-native solutions using AWS. Strong advocate for **documentation-driven development**, modular design patterns, and long-term maintainability. Demonstrated ability to lead technical decision-making, define standards, and collaborate with business stakeholders to translate requirements into robust, sustainable systems. English: C1 (Advanced).
 
 ---
 
@@ -397,6 +397,63 @@ Software Engineer with 5+ years of experience designing and building **productio
 
 ---
 
+## Work Experience
+
+### Full Stack Developer
+**Unión Agencia de Seguros** | Bogota, Colombia  
+*January 2025 – Present*
+
+Full-stack developer for insurance agency, designing and building production systems for internal operations and client-facing tools.
+
+**Key Achievements:**
+- Developed **Insurance Document Automation System** (GENERADOR_CARTAS_COBRO) - PyQt6 desktop app with PDF generation, DIAN NIT validation, deployed as standalone .exe
+- Built **Conciliator Softseguros Celer** - Production reconciliation platform processing 50,000+ records with 100% data integrity
+- Created **Insurance Production Dashboard** - Business intelligence tool for Excel report processing and visualization
+- Designed **Data Migration Platform** for Softseguros with DIAN API integration and batch NIT validation
+
+**Technologies:** Python, FastAPI, PyQt6, Pydantic, ReportLab, PostgreSQL, Pandas, PyInstaller
+
+---
+
+### Web Developer
+**Quantum Software and Marketing** | Bogota, Colombia  
+*February 2020 – January 2025* (5 years)
+
+Full-stack web developer responsible for client projects from requirements gathering through deployment. Built and maintained 20+ production websites and applications across diverse industries.
+
+**Key Responsibilities:**
+- Developed responsive websites and web applications for clients (healthcare, retail, hospitality, entertainment, manufacturing)
+- Implemented React frontends with Node.js/JavaScript backends
+- Managed full project lifecycle: client communication, design, development, testing, deployment, maintenance
+- Built long-term client relationships with repeat engagements (Mantra Coworking: 3 versions, CH Beauty: 2 versions)
+
+**Notable Projects:**
+- WhatsApp quotation bot for Acrildental (healthcare)
+- Business platforms for Arte Acero (manufacturing), Bioteck (healthcare), La Katrina Gastrobar (hospitality)
+- Booking systems for CH Beauty Salon
+- Portfolio sites for LFC Arquitectura
+
+**Technologies:** JavaScript, React, Node.js, HTML/CSS, PHP, MySQL, REST APIs, Git
+
+---
+
+### Bilingual Customer Service Specialist
+**Concentrix Customer Services Colombia SAS** | Bogota, Colombia  
+*October 2019 – December 2019*
+
+Bilingual call center agent (Spanish/English) providing customer service for Macy's Credit with banking experience.
+
+**Key Skills Developed:**
+- Customer empathy and active listening
+- Problem-solving under time pressure
+- Sales techniques and objection handling
+- Cross-cultural communication (US clients from Colombia)
+- Professional English communication in high-pressure environment
+
+**Relevance to Engineering:** Developed strong communication and stakeholder management skills that transfer directly to gathering requirements, presenting technical solutions, and collaborating with business teams.
+
+---
+
 ## Documentation & Process Culture
 
 - **README-Driven Development:** Every project includes comprehensive README with architecture diagrams, installation guides, and troubleshooting sections
@@ -411,15 +468,38 @@ Software Engineer with 5+ years of experience designing and building **productio
 ## Education
 
 **Mechatronics Engineering**  
-Universidad Militar Nueva Granada  
-Expected Graduation: 2026
+Universidad Militar Nueva Granada | Bogota, Colombia  
+*Currently Enrolled* | Expected Graduation: 2027
+
+---
+
+## Certifications
+
+**Misión TIC 2022 — Web Applications Development**  
+MinTIC (Ministry of ICT) & Universidad Pontificia Bolivariana | Medellín, Colombia  
+*December 2021* | **800 hours**  
+- Completed Cycle 1, Cycle 2, and Cycle 3 with emphasis on Web Applications
+- Official certification issued by the Ministry of Information and Communications Technologies
+- Credential ID: 1000718485
+
+---
+
+## Additional Education
+
+**Seminar in Humanism**  
+Universidad Católica de Oriente | Rionegro, Antioquia  
+*2018*
+
+**High School Diploma (Bachiller Académico)**  
+Centro Vocacional Legionarios de Cristo | Rionegro, Antioquia  
+*2018*
 
 ---
 
 ## Languages
 
 - **Spanish:** Native
-- **English:** Conversational (B2), actively improving
+- **English:** C1 Advanced (Professional working proficiency)
 
 ---
 
@@ -427,13 +507,14 @@ Expected Graduation: 2026
 
 | Metric | Value |
 |--------|-------|
+| Years of Professional Experience | 6+ |
 | GitHub Contributions (Last Year) | 782+ |
 | Public Repositories | 111 |
 | Primary Languages | Python, TypeScript, JavaScript, C++ |
 | Production Systems Delivered | 10+ |
 | Client Projects Completed | 20+ |
 | Test Coverage (Key Projects) | 90%+ |
-| Desktop Apps Deployed | 2 (standalone .exe) |
+| Desktop Apps Deployed | 10+ (standalone .exe) |
 | Mobile Apps Developed | 1 (Android + Bluetooth) |
 | Full-Stack APIs Built | 5+ |
 
